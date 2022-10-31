@@ -24,31 +24,37 @@ Console.WriteLine("O Saldo de Amanda antes de tudo e: " + conta2.saldo);
 
 Console.WriteLine();
 
-bool transferencia = conta1.Transferir(50, conta2);
+transferencia = conta1.Transferir(50, conta2);
 
 Console.WriteLine("Tranferencia realizada com sucesso? " + transferencia);
 Console.WriteLine("O Saldo de Amanda depois de tudo e: " + conta2.saldo);
-Console.WriteLine("O saldo de Dennis depois de tudo e: " + conta1.saldo);*/
+Console.WriteLine("O saldo de Dennis depois de tudo e: " + conta1.saldo);
 
 Cliente cliente = new Cliente();
-//cliente.nome = "Dennis Bozzi";
-//cliente.cpf = "10988042797";
-//cliente.profissao = "Programador C#";
+cliente.nome = "Dennis Bozzi";
+cliente.cpf = "10988042797";
+cliente.profissao = "Programador C#";
 
 ContaCorrente conta3 = new ContaCorrente();
-//cliente.nome = "Dennis Bozzi";
-//cliente.cpf = "10988042797";
-//cliente.profissao = "Programador C#";
+cliente.nome = "Dennis Bozzi";
+cliente.cpf = "10988042797";
+cliente.profissao = "Programador C#";
 conta3.conta = "2513252-x";
 conta3.numero_agencia = 35;
 conta3.nome_agencia = "Agencia Central";
 
-//Console.WriteLine(cliente.nome);
-//Console.WriteLine(conta3.titular.nome);
+Console.WriteLine(cliente.nome);
+Console.WriteLine(conta3.titular.nome);
 
 if (conta3.titular == null)
 {
     Console.WriteLine("Dennis e lindo");
 }
+*/
+
+ContaCorrente conta4 = new ContaCorrente();
+
+conta4.saldo = -10;
+Console.WriteLine(conta4.saldo);
 
 Console.ReadKey();
